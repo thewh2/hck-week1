@@ -2,46 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding HTML Links & CSS</title>
+    <title>Understanding HTML Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #e0e0e0; /* light gray bar */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            margin: 0 5px;
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        .absolute-box {
+            background-color: #cce5ff; /* light blue */
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        .relative-box {
+            background-color: #fff3cd; /* light yellow */
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a> | 
-            <a href="#">About Us</a> | 
-            <a href="#">Privacy Policy</a>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>Understanding HTML Links</h1>
 
-        <p >
-            Hyperlinks are the backbone of the web. They allow users to navigate between pages seamlessly. Below, we explore the two main types of links: 
-            <span>Absolute</span> and 
-            <strong>Relative</strong>.
-        </p>
+<header>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About Us</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+</header>
 
+<main>
+    <h1>Understanding HTML Links</h1>
+
+    <p>
+        Hyperlinks are the backbone of the web. They allow users to navigate between pages seamlessly. 
+        Below, we explore the two main types of links: Absolute and Relative.
+    </p>
+
+    <div class="absolute-box">
         <h2>1. Absolute Linking</h2>
-
-        <p>Absolute links point to a specific, full URL on the internet. They must include the protocol (like https://) and the domain name. These are typically used to link to external websites.</p>
-
-        <p><strong>Example:</strong> Learn more about web development by visiting the <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank">Wikipedia page for HTTP</a>.</p>
-        
-        <h2>2. Relative Linking</h2>
-
         <p>
-            Relative links point to a file relative to the current file's location on the same server. They do not include the protocol or domain name. These are ideal for linking pages within your own website because if you change your domain name, the links won't break.
+            Absolute links point to a specific, full URL on the internet. They must include the protocol 
+            (like https://) and the domain name. These are typically used to link to external websites.
         </p>
+        <p>
+            <strong>Example:</strong> Learn more about web development by visiting the 
+            <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank">Wikipedia page for HTTP</a>.
+        </p>
+    </div>
 
-        <div>
-            <strong>Examples:</strong>
-            <ul>
-                <li> Read our <a href="#">About Us</a> page to meet the team.</li>
-                <li> Check out our <a href="#">Privacy Policy</a> to see how we handle data.</li>
-            </ul>
-        </div>
-    </main>
+    <div class="relative-box">
+        <h2>2. Relative Linking</h2>
+        <p>
+            Relative links point to a file relative to the current file's location on the same server. 
+            They do not include the protocol or domain name. These are ideal for linking pages within 
+            your own website because if you change your domain name, the links won't break.
+        </p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+            <li>Read our <a href="about.html">About Us</a> page to meet the team.</li>
+            <li>Check out our <a href="privacy-policy.html">Privacy Policy</a> to see how we handle data.</li>
+        </ul>
+    </div>
+</main>
+
 </body>
 </html>
